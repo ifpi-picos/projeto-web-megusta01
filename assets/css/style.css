@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+}
+
+header, footer{
+    height: 60px;
+}
+
+header{
+    background-color: #0d1f2d;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1{
+    color: white;
+    font-family: 'kode mono', monospace;
+    padding: 10px 10px;
+    font-size: 2.0rem;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    height: 100%;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+.myname{
+    padding-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.name{
+    color: #546a7b;
+    font-family: kode mono, monospace;
+    font-size: 2.0rem;
+}
+
+.myname, .description{
+    width: 90%;
+    padding-bottom: 25px;
+}
+
+.ilustration{
+    width: 27%;
+    border-left: 1px solid black;
+    padding: 0 2rem
+}
+
+.initial-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.initial-page button, a{
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #0d1f2d;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.quem-sou{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.name2{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.quem-sou, .descricao{
+    width: 60%;
+}
+
+.my-photo{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 2px solid #0d1f2d;
+    overflow: hidden;
+}
+
+.my-photo img{
+    max-width: 300px;
+}
+
+footer{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #546a7b;
+}
+footer a{
+    background-color: #546a7b;
+    border: 1px solid white;
+}
