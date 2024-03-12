@@ -1,133 +1,210 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
 
-*{
-    box-sizing: border-box;
+* {
     margin: 0;
+    box-sizing: border-box;
 }
 
-body{
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+body {
     font-family: 'Roboto', sans-serif;
 }
 
-header, footer{
+header {
     height: 60px;
-}
-
-header{
-    background-color: #0d1f2d;
+    background-color: #D2232A;
     display: flex;
     justify-content: space-between;
-}
-
-header h1{
-    color: white;
-    font-family: 'kode mono', monospace;
-    padding: 10px 10px;
-    font-size: 2.0rem;
-}
-
-main{
-    height: 100vh;
-    display: flex;
-}
-
-nav{
-    display: flex;
-    justify-content: center;
-    gap: 15px;
     align-items: center;
-    height: 100%;
+    padding: 0 20px;
 }
 
-nav a{
-    text-decoration: none;
+header img {
+    height: 60px;
+    margin-left: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
     color: white;
+    text-decoration: none;
 }
 
-.myname{
-    padding-bottom: 15px;
-    font-size: 1.8rem;
+nav ul a {
+    color: white;
+    text-decoration: none;
+    padding: 0 20px;
 }
 
-.name{
-    color: #546a7b;
-    font-family: kode mono, monospace;
-    font-size: 2.0rem;
-}
-
-.myname, .description{
-    width: 90%;
-    padding-bottom: 25px;
-}
-
-.ilustration{
-    width: 27%;
-    border-left: 1px solid black;
-    padding: 0 2rem
-}
-
-.initial-page{
+.banner {
+    height: 91vh;
+    background-image: url(https://colunadofla.com/wp-content/uploads/2023/02/maracana-flamengo-x-corinthians-libertadores.jpg);
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    gap: 20px;
-}
-
-.initial-page button, a{
-    padding: 10px 20px;
-    border: none;
     color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    background-color: #0d1f2d;
-    font-size: 1.2rem;
-    cursor: pointer;
 }
 
-.quem-sou{
+.banner img {
+    width: 180px;
+    margin-bottom: 90px;
+}
+
+.escudo-pulsante {
+    animation: pulse 1.5s infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.crf {
     width: 80%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: justify;
+    padding-bottom: 40px;
+}
+
+.crf h1 {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.crf span {
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+.conquistas {
+    background-color: #D2232A;
+    padding: 5px;
+    padding-bottom: 40px;
+}
+
+.content {
+    color: white;
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-around;
+    margin-top: 50px;
+}
+
+.content button {
+    background-color: white;
+    color: #D2232A;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.conquistas p {
+    width: 93%;
+    text-align: justify;
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding-bottom: 40px;
+}
+
+.rei-zico {
+    width: 100%;
+    display: flex;
     align-items: center;
+    margin-top: 50px;
+}
+
+.rei-zico img {
+    width: 250px
+}
+
+.titulos {
+    width: 80%;
     margin: 0 auto;
 }
 
-.name2{
-    font-weight: bold;
-    font-size: 1.1rem;
+.titulos h1 {
+    text-align: center;
+    margin-top: 50px;
 }
 
-.quem-sou, .descricao{
-    width: 60%;
+.tacas {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    flex-wrap: wrap;
 }
 
-.my-photo{
+.card {
     width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    border: 2px solid #0d1f2d;
+    border: 1px solid #ccc;
+    border-radius: 8px;
     overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    
 }
 
-.my-photo img{
-    max-width: 300px;
+.card img {
+    max-width: 100%;
+    width: 100%;
+    /* imagem ocupará 100% da largura do card */
+    height: 200px;
+    /* altura automática para manter a proporção */
 }
 
-footer{
-    height: 60px;
+.card-text {
+    padding: 20px;
+    /* padding interno para o texto */
+}
+
+.card-text h2 {
+    margin-top: 0;
+    /* remova a margem superior padrão do título */
+}
+
+.card-text p {
+    margin-bottom: 0;
+    /* remova a margem inferior padrão do parágrafo */
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
     display: flex;
     justify-content: center;
+    gap: 40px;
     align-items: center;
-    background-color: #546a7b;
 }
-footer a{
-    background-color: #546a7b;
-    border: 1px solid white;
+
+footer a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+footer i{
+    color: #fff;
+    font-size: 2rem;
+    margin: 10px;
 }
