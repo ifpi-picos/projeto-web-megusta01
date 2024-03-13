@@ -16,6 +16,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 header img {
@@ -37,19 +40,26 @@ nav ul a {
 }
 
 .banner {
-    height: 91vh;
-    background-image: url(https://colunadofla.com/wp-content/uploads/2023/02/maracana-flamengo-x-corinthians-libertadores.jpg);
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)), url(/assets/img/background-initial-page.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
     color: white;
 }
 
 .banner img {
     width: 180px;
-    margin-bottom: 90px;
+    margin-bottom: 100px;
+}
+
+banmer h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
 }
 
 .escudo-pulsante {
@@ -83,11 +93,61 @@ h1 {
 .crf h1 {
     padding-top: 20px;
     text-align: center;
+    font-size: 2.5rem;
 }
 
 .crf span {
     font-weight: bold;
     font-size: 1.7rem;
+}
+
+.history{
+    padding: 5px;
+    padding-bottom: 40px;
+    text-align: justify;
+}
+
+.history h1{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.content-history{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+}
+
+.history-img{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.history-img img{
+    width: 480px;
+    border-radius: 20px;
+}
+
+.history-text{
+    width: 50%;
+    font-size: 1.5rem;
+}
+
+.history-text button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
 }
 
 .conquistas {
@@ -114,7 +174,6 @@ h1 {
     font-size: 1.5rem;
     font-weight: bold;
     cursor: pointer;
-
 }
 
 .conquistas p {
