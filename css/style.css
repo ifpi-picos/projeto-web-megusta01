@@ -425,6 +425,38 @@ footer i{
     .card {
         width: 80%;
     }
+
+    .main-historia img{
+        width: 100%;
+    }
+
+    .fundacao{
+        flex-direction: column;
+    }
+
+    .inicio-futebol{
+        flex-direction: column;
+    }
+
+    .tri-estadual{
+        flex-direction: column;
+    }
+
+    .tetra-copa{
+        flex-direction: column;
+    }
+
+    .octa-brasileiro{
+        flex-direction: column;
+    }
+
+    .tri-america{
+        flex-direction: column;
+    }
+
+    .mundial{
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 576px) {
@@ -485,59 +517,35 @@ footer i{
         font-size: 2rem;
     }
 
-    .fundacao{
-        flex-direction: column;
+    .main-historia img{
+        width: 100%;
     }
 
-    .fundacao img{
-        width: 100%;
+    .fundacao{
+        flex-direction: column;
     }
 
     .inicio-futebol{
         flex-direction: column;
     }
 
-    .inicio-futebol img{
-        width: 100%;
-    }
-
     .tri-estadual{
         flex-direction: column;
-    }
-
-    .tri-estadual img{
-        width: 100%;
     }
 
     .tetra-copa{
         flex-direction: column;
     }
 
-    .tetra-copa img{
-        width: 100%;
-    }
-
     .octa-brasileiro{
         flex-direction: column;
-    }
-
-    .octa-brasileiro img{
-        width: 100%;
     }
 
     .tri-america{
         flex-direction: column;
     }
 
-    .tri-america img{
-        width: 100%;
-    }
-
     .mundial{
         flex-direction: column;
-    }
-
-    .mundial img{
-        width: 100%;
     }
 }
