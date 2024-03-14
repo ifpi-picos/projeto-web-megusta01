@@ -387,8 +387,9 @@ footer {
 }
 
 footer a {
-    color: #ccc;
+    color: #fff;
     text-decoration: none;
+    cursor: pointer;
 }
 
 footer i{
