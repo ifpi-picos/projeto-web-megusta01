@@ -10,6 +10,11 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -79,11 +84,19 @@ h1 {
 }
 
 .crf {
-    width: 80%;
-    margin: 0 auto;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
     font-size: 1.2rem;
     text-align: justify;
-    padding-bottom: 40px;
+}
+
+.welcome{
+    width: 80%;
 }
 
 .crf h1 {
@@ -104,8 +117,10 @@ h1 {
 }
 
 .history h1{
+    background-color: white;
     text-align: center;
     font-size: 2.5rem;
+    margin-top: 40px;
     padding-bottom: 30px;
 }
 
@@ -252,6 +267,114 @@ h1 {
     /* remova a margem inferior padrão do parágrafo */
 }
 
+.main-historia{
+    max-width: 80vw;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.main-historia h1{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.main-historia p{
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+.fundacao{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+.fundacao img{
+    width: 400px;
+    border-radius: 20px;
+}
+
+.inicio-futebol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+.inicio-futebol img{
+    width: 400px;
+    border-radius: 20px;
+}
+
+.tri-estadual{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+.tri-estadual img{
+    width: 400px;
+    border-radius: 20px;
+}
+
+.tetra-copa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+.tetra-copa img{
+    width: 400px;
+    border-radius: 20px;
+}
+
+.octa-brasileiro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+.octa-brasileiro img{
+    width: 400px;
+    border-radius: 20px;
+}
+
+.tri-america{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+.tri-america img{
+    width: 400px;
+    border-radius: 20px;
+}
+
+.mundial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+.mundial img{
+    width: 400px;
+    border-radius: 20px;
+}
+
 footer {
     background-color: black;
     color: white;
@@ -270,7 +393,7 @@ footer a {
 
 footer i{
     color: #fff;
-    font-size: 2rem;
+    font-size: 1.3rem;
     margin: 10px;
 }
 
@@ -360,5 +483,61 @@ footer i{
 
     .titulos h1 {
         font-size: 2rem;
+    }
+
+    .fundacao{
+        flex-direction: column;
+    }
+
+    .fundacao img{
+        width: 100%;
+    }
+
+    .inicio-futebol{
+        flex-direction: column;
+    }
+
+    .inicio-futebol img{
+        width: 100%;
+    }
+
+    .tri-estadual{
+        flex-direction: column;
+    }
+
+    .tri-estadual img{
+        width: 100%;
+    }
+
+    .tetra-copa{
+        flex-direction: column;
+    }
+
+    .tetra-copa img{
+        width: 100%;
+    }
+
+    .octa-brasileiro{
+        flex-direction: column;
+    }
+
+    .octa-brasileiro img{
+        width: 100%;
+    }
+
+    .tri-america{
+        flex-direction: column;
+    }
+
+    .tri-america img{
+        width: 100%;
+    }
+
+    .mundial{
+        flex-direction: column;
+    }
+
+    .mundial img{
+        width: 100%;
     }
 }
